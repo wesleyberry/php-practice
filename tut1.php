@@ -49,6 +49,7 @@ define('PI', 3.1415);
             echo "$num_1 / $num_2 = " . (intdiv($num_1, $num_2)) . '<br>';
             echo "Increment $num_1 = " . ($num_1++) . '<br>';
             echo "Decrement $num_1 = " . ($num_1--) . '<br>';
+            echo number_format(12345.6789, 2) . "<br>";
         }
     } 
     ?>
