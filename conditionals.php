@@ -42,6 +42,8 @@
     } else {
         echo "They aren't equal<br>";
     }
+
+    printf("%c %d %.2f %s<br>", 65, 65, 1.234, "string");
     ?>
 </body>
 </html>
