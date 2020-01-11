@@ -52,6 +52,14 @@ define('PI', 3.1415);
             echo number_format(12345.6789, 2) . "<br>";
         }
     } 
+
+    if(isset($_GET) && array_key_exists('state', $_GET)) {
+        $state = $_GET['state'];
+        if(isset($state) && !empty($state)) {
+            echo 'You live in ' . $state . '<br>';
+            echo"$f_name lives in $state<br>";
+        }
+    }
     ?>
 </body>
 </html>
