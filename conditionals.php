@@ -53,7 +53,11 @@
     printf("Upper : %s<br>", strtoupper($rand_str));
     printf("Lower : %s<br>", strtolower($rand_str));
     printf("1st Char : %s<br>", ucfirst($rand_str));
-    printf("1st 6 : %s<br>", substr($rand_str, 0, 6));
+    printf("1st 6 : %s<br><br>", substr($rand_str, 0, 6));
+    printf("Index : %s<br><br>", strpos($rand_str, "String"));
+    $rand_str = str_replace("String", "Characters", $rand_str);
+    printf("Replace : %s<br>", $rand_str);
+    printf("A === B : %d<br>", strcmp("A", "B"));
 
     ?>
 </body>
