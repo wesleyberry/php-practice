@@ -43,7 +43,18 @@
         echo "They aren't equal<br>";
     }
 
-    printf("%c %d %.2f %s<br>", 65, 65, 1.234, "string");
+    printf("%c %d %.2f %s<br><br>", 65, 65, 1.234, "string");
+
+    $rand_str = "     Random String     ";
+    printf("Length : %d<br>", strlen($rand_str));
+    printf("Length : %d<br>", strlen(ltrim($rand_str)));
+    printf("Length : %d<br><br>", strlen(rtrim($rand_str)));
+    $rand_str = trim($rand_str);
+    printf("Upper : %s<br>", strtoupper($rand_str));
+    printf("Lower : %s<br>", strtolower($rand_str));
+    printf("1st Char : %s<br>", ucfirst($rand_str));
+    printf("1st 6 : %s<br>", substr($rand_str, 0, 6));
+
     ?>
 </body>
 </html>
