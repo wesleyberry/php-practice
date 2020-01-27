@@ -4,15 +4,22 @@ class Customer {
     public $id = 1;
     public $name;
     public $email;
-    public $location;
+    public $balance;
 
-    public function getCustomer($id) {
+    public function __construct($id, $name, $email, $balance) {
         $this->id = $id;
-        return 'John Doe';
+        $this->name = $name;
+        $this->email = $email;
+        $this->balance = $balance;
+    }
+
+    public function getEmail() {
+        return $this->email;
     }
 }
 
-$customer = new Customer;
-echo $customer->id;
+$customer = new Customer(1, 'Sullivan', 'sully@cat.com', 0);
+
+echo $customer->getEmail();
 
 ?>
